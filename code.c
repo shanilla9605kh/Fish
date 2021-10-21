@@ -13,6 +13,12 @@ void main()
       setcolor(0);
     }
 
+    //frame
+    line(1,1,getmaxx(),1);
+    line(1,1,1,getmaxy());
+    line(getmaxx(),1,getmaxx(),getmaxy());
+    line(1,440,getmaxx(),440);
+    line(1,60,getmaxx(),60);
 
     //aquarium
     //stones
@@ -93,7 +99,114 @@ void main()
     cleardevice();
   }
 
-  
+  //colors
+  //above water
+  setfillstyle(9,7);
+  floodfill(3,3,0);
+
+  //water
+  setfillstyle(9,9);
+  floodfill(60,70,0);
+  floodfill(5,70,0);
+
+  //fish bubbles
+  setfillstyle(1,9);
+  floodfill(240,282,0);
+  floodfill(270,242,0);
+  floodfill(300,212,0);
+  floodfill(330,182,0);
+
+  //oxygen bubbles
+  floodfill(120,232,0);
+  floodfill(130,162,0);
+  floodfill(135,72,0);
+  floodfill(120,282,0);
+
+  //oxygen bubble generator
+  //pipe
+  setfillstyle(6,7);
+  floodfill(30,30,0);
+  floodfill(30,70,0);
+
+  //box
+  setfillstyle(3,7);
+  floodfill(30,320,0);
+  setfillstyle(4,7);
+  floodfill(90,330,0);
+
+  //fish
+  //eye
+  setfillstyle(10,8);
+  floodfill(277,302,0);
+
+  //ufin
+  setfillstyle(6,10);
+  floodfill(320,270,0);
+
+  //body
+  setfillstyle(9,12);
+  floodfill(330,290,0);
+
+  //face
+  setfillstyle(1,14);
+  floodfill(260,312,0);
+
+  //bodyfin
+  setfillstyle(10,13);
+  floodfill(302,310,0);
+
+  //tail
+  setfillstyle(6,1);
+  floodfill(410,305,0);
+
+  //lfinleft
+  setfillstyle(6,4);
+  floodfill(312,345,0);
+
+  //lfinright
+  setfillstyle(1,11);
+  floodfill(370,325,0);
+
+  //base
+  setfillstyle(1,1);
+  floodfill(30,470,0);
+
+  //stones
+  //lightgrey
+  setfillstyle(1,7);
+  floodfill(100,425,0);
+  floodfill(180,415,0);
+  floodfill(435,425,0);
+  floodfill(625,424,0);
+  floodfill(566,385,0);
+  floodfill(608,360,0);
+
+  //cayn
+  setfillstyle(1,3);
+  floodfill(150,430,0);
+  floodfill(268,404,0);
+  floodfill(553,404,0);
+  floodfill(585,372,0);
+  floodfill(250,425,0);
+  floodfill(580,425,0);
+
+  //red
+  setfillstyle(1,4);
+  floodfill(200,430,0);
+  floodfill(219,411,0);
+  floodfill(390,430,0);
+  floodfill(500,420,0);
+
+  //green
+  setfillstyle(1,10);
+  floodfill(335,435,0);
+  floodfill(602,396,0);
+  floodfill(630,347,0);
+
+  //yellow
+  setfillstyle(1,14);
+  floodfill(630,375,0);
+  floodfill(368,412,0);
   getch();
   closegraph();
 }
